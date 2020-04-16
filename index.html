@@ -38,8 +38,8 @@
             <a href="#" class="w3-bar-item w3-button w3-padding-16 active"><i class="material-icons">dashboard</i>Option
                 1</a>
             <div class="w3-dropdown-click">
-                <a class="w3-button w3-padding-16"><i
-                        class="material-icons">dashboard</i>Main<span class="arrow"></span></a></a>
+                <a class="w3-button w3-padding-16"><i class="material-icons">dashboard</i>Main<span
+                        class="arrow"></span></a></a>
                 <div class="w3-dropdown-content">
                     <a href="#" class="w3-bar-item w3-button">Sub Menu 1</a>
                     <a href="#" class="w3-bar-item w3-button">Sub Menu 2</a>
@@ -51,8 +51,7 @@
             <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Option 4</a>
             <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Option 5</a>
             <div class="w3-dropdown-click">
-                <a class="w3-button w3-padding-16"><i
-                        class="material-icons">dashboard</i>Menu
+                <a class="w3-button w3-padding-16"><i class="material-icons">dashboard</i>Menu
                     Item<span class="arrow"></span></a></a>
                 <div class="w3-dropdown-content">
                     <a href="#" class="w3-bar-item w3-button">Sub Menu 1</a>
@@ -67,23 +66,36 @@
     </div>
     <script>
         $('.w3-dropdown-click').click(function() {
+            $('.left-nav > .w3-button').removeClass('active')
+            $(this).addClass('active');
             let el = $(this).children('.w3-dropdown-content')
-            if (el.is(":visible"))
+            if (el.is(":visible")) {
                 el.hide();
-            else {
+                $(this).removeClass('active')
+            } else {
                 $('.w3-dropdown-content').hide();
                 el.show();
             }
         })
-        $('.left-nav > .w3-button, .w3-dropdown-click').click(function() {
-            let x = this;
-            $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
-            if (x.className.indexOf("active") == -1) {
-                x.className += " active";
-            } else {
-                x.className = x.className.replace(" active", "");
-            }
-        })
+        $('.left-nav > .w3-button').click(function() {
+                let x = this;
+                $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
+                $('.w3-dropdown-content').hide();
+                if (x.className.indexOf("active") == -1) {
+                    x.className += " active";
+                } else {
+                    x.className = x.className.replace(" active", "");
+                }
+            })
+            // $('.left-nav > .w3-button, .w3-dropdown-click').click(function() {
+            //     let x = this;
+            //     $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
+            //     if (x.className.indexOf("active") == -1) {
+            //         x.className += " active";
+            //     } else {
+            //         x.className = x.className.replace(" active", "");
+            //     }
+            // })
     </script>
 </body>
 
