@@ -56,7 +56,6 @@ header {
 }
 
 .left-nav .name {
-  text-transform: uppercase;
   padding-left: 10px;
   margin-bottom: 0;
   padding-top: 6px;
@@ -69,10 +68,12 @@ header {
 }
 
 .left-nav .name h1 {
+  text-transform: uppercase;
   font-size: 18px;
 }
 
 .left-nav .name h4 {
+  text-transform: capitalize;
   font-size: 16px;
 }
 
@@ -82,8 +83,12 @@ header {
   vertical-align: middle;
 }
 
+.left-nav .arrow {
+  display: inline-block;
+  padding: 12px 8px;
+}
+
 .left-nav .arrow::after {
-  float: right;
   text-align: center;
   display: inline;
   font-size: 18px;

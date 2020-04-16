@@ -55,7 +55,6 @@ header {
         }
     }
     .name {
-        text-transform: uppercase;
         padding-left: 10px;
         margin-bottom: 0;
         padding-top: 6px;
@@ -65,9 +64,11 @@ header {
             margin: 0;
         }
         h1 {
+            text-transform: uppercase;
             font-size: 18px;
         }
         h4 {
+            text-transform: capitalize;
             font-size: 16px;
         }
     }
@@ -78,8 +79,11 @@ header {
             vertical-align: middle;
         }
     }
+    .arrow {
+        display: inline-block;
+        padding: 12px 8px;
+    }
     .arrow::after {
-        float: right;
         text-align: center;
         display: inline;
         font-size: 18px;
