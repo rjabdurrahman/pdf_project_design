@@ -38,7 +38,7 @@
             <a href="#" class="w3-bar-item w3-button w3-padding-16 active"><i class="material-icons">dashboard</i>Option
                 1</a>
             <div class="w3-dropdown-click">
-                <a onclick="dropdownControl(this)" class="w3-button w3-padding-16"><i
+                <a class="w3-button w3-padding-16"><i
                         class="material-icons">dashboard</i>Main<span class="arrow"></span></a></a>
                 <div class="w3-dropdown-content">
                     <a href="#" class="w3-bar-item w3-button">Sub Menu 1</a>
@@ -51,7 +51,7 @@
             <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Option 4</a>
             <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Option 5</a>
             <div class="w3-dropdown-click">
-                <a onclick="dropdownControl(this)" class="w3-button w3-padding-16"><i
+                <a class="w3-button w3-padding-16"><i
                         class="material-icons">dashboard</i>Menu
                     Item<span class="arrow"></span></a></a>
                 <div class="w3-dropdown-content">
@@ -66,14 +66,15 @@
         </div>
     </div>
     <script>
-        function dropdownControl(el) {
-            let x = el.nextElementSibling;
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
+        $('.w3-dropdown-click').click(function() {
+            let el = $(this).children('.w3-dropdown-content')
+            if (el.is(":visible"))
+                el.hide();
+            else {
+                $('.w3-dropdown-content').hide();
+                el.show();
             }
-        }
+        })
         $('.left-nav > .w3-button, .w3-dropdown-click').click(function() {
             let x = this;
             $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
