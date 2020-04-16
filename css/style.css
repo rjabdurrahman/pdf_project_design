@@ -37,6 +37,10 @@ header {
   min-height: calc(100vh - 70.4px);
 }
 
+.left-nav .w3-button {
+  white-space: normal;
+}
+
 .left-nav .client {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -94,6 +98,10 @@ header {
   font-size: 18px;
   font-family: FontAwesome;
   content: "\f105";
+}
+
+.left-nav .active .arrow::after {
+  content: "\f107";
 }
 
 .left-nav .active,

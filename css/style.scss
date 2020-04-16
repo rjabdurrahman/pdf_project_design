@@ -38,6 +38,9 @@ header {
 .left-nav {
     max-width: 300px;
     min-height: calc(100vh - 70.4px);
+    .w3-button {
+        white-space: normal;
+    }
     .client {
         padding-top: 18px;
         padding-bottom: 18px;
@@ -89,6 +92,9 @@ header {
         font-size: 18px;
         font-family: FontAwesome;
         content: "\f105";
+    }
+    .active .arrow::after {
+        content: "\f107";
     }
     .active,
     .w3-button:hover {
