@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yves</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="w3-bar top-nav">
+            <div class="w3-left">
+                <a href="#" class="w3-bar-item w3-padding-24">Brand Logo</a>
+            </div>
+            <div class="w3-right">
+                <a href="#" class="w3-bar-item w3-padding-24">Home</a>
+                <a href="#" class="w3-bar-item w3-padding-24">Clients</a>
+                <a href="#" class="w3-bar-item w3-padding-24">Search</a>
+            </div>
+        </div>
+    </header>
+    <div class="flex">
+        <div class="left-nav w3-bar-block w3-white">
+            <div class="client flex">
+                <div class="letter">MM</div>
+                <div class="name">
+                    <h1>Mustasin</h1>
+                    <h4>Max</h4>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16 active"><i class="material-icons">dashboard</i>Option
+                1</a>
+            <div class="w3-dropdown-click">
+                <a onclick="dropdownControl(this)" class="w3-button w3-padding-16"><i
+                        class="material-icons">dashboard</i>Main<span class="arrow"></span></a></a>
+                <div class="w3-dropdown-content">
+                    <a href="#" class="w3-bar-item w3-button">Sub Menu 1</a>
+                    <a href="#" class="w3-bar-item w3-button">Sub Menu 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Sub Menu 3</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Option 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Option 3</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Option 4</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Option 5</a>
+            <div class="w3-dropdown-click">
+                <a onclick="dropdownControl(this)" class="w3-button w3-padding-16"><i
+                        class="material-icons">dashboard</i>Menu
+                    Item<span class="arrow"></span></a></a>
+                <div class="w3-dropdown-content">
+                    <a href="#" class="w3-bar-item w3-button">Sub Menu 1</a>
+                    <a href="#" class="w3-bar-item w3-button">Sub Menu 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Sub Menu 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="w3-container">
+            <h1>Main Content</h1>
+        </div>
+    </div>
+    <script>
+        function dropdownControl(el) {
+            let x = el.nextElementSibling;
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        $('.left-nav > .w3-button, .w3-dropdown-click').click(function() {
+            let x = this;
+            $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
+            if (x.className.indexOf("active") == -1) {
+                x.className += " active";
+            } else {
+                x.className = x.className.replace(" active", "");
+            }
+        })
+    </script>
+</body>
+
+</html>

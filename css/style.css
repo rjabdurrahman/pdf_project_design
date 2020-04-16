@@ -1,0 +1,104 @@
+body {
+  background-color: #F7F7F7;
+  color: #222c3c;
+  font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  position: relative;
+}
+
+.top-nav {
+  color: #ffffff;
+  background-color: #4680ff !important;
+}
+
+.top-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.top-nav a:hover {
+  font-weight: bold;
+}
+
+.top-nav .w3-right {
+  margin-right: 100px;
+}
+
+.left-nav {
+  min-width: 300px;
+  min-height: calc(100vh - 70.4px);
+}
+
+.left-nav .client {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+}
+
+.left-nav .client .letter {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #6673FC;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.left-nav .name {
+  text-transform: uppercase;
+  padding-left: 10px;
+  margin-bottom: 0;
+  padding-top: 6px;
+}
+
+.left-nav .name h1,
+.left-nav .name h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.left-nav .name h1 {
+  font-size: 18px;
+}
+
+.left-nav .name h4 {
+  font-size: 16px;
+}
+
+.left-nav a i {
+  font-size: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.left-nav .arrow::after {
+  float: right;
+  text-align: center;
+  display: inline;
+  font-size: 18px;
+  font-family: FontAwesome;
+  content: "\f105";
+}
+
+.left-nav .active,
+.left-nav .w3-button:hover {
+  color: #6673FC !important;
+  background-color: #e1e1e1 !important;
+}
+
+.left-nav .w3-dropdown-content {
+  background-color: #e1e1e1;
+  position: relative;
+  padding-left: 22px;
+}
+/*# sourceMappingURL=style.css.map */
