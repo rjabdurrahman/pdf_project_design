@@ -79,9 +79,12 @@
                     <a href="#" class="w3-bar-item w3-button">Sub Menu 3</a>
                 </div>
             </div>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Charges extraordinaires</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Retenues d’impôt / Diverses demandes</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Revenu imposable</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Charges
+                extraordinaires</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Retenues
+                d’impôt / Diverses demandes</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16"><i class="material-icons">dashboard</i>Revenu
+                imposable</a>
         </div>
         <div class="w3-container">
             <h1>Main Content</h1>
@@ -90,13 +93,14 @@
     <script>
         $('.w3-dropdown-click').click(function() {
             $('.left-nav > .w3-button').removeClass('active')
-            $(this).addClass('active');
             let el = $(this).children('.w3-dropdown-content')
             if (el.is(":visible")) {
                 el.hide();
                 $(this).removeClass('active')
             } else {
                 $('.w3-dropdown-content').hide();
+                $('.w3-dropdown-click').removeClass('active');
+                $(this).addClass('active');
                 el.show();
             }
         })
