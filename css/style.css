@@ -1,25 +1,7 @@
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 2px lightgray;
-          box-shadow: inset 0 0 2px lightgray;
-}
-
-::-webkit-scrollbar-thumb {
-  background: lightblue;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #6673FC;
-  border-radius: 3px;
-}
-
 body {
   background-color: #F7F7F7;
   color: #222c3c;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .flex {
@@ -39,11 +21,21 @@ header {
 
 .top-nav a {
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-family: "Trebuchet MS", sans-serif !important;
+  text-align: center;
 }
 
 .top-nav a:hover {
   font-weight: bold;
+}
+
+.top-nav a label {
+  display: block;
+}
+
+.top-nav a label.text {
+  margin-top: -4px;
 }
 
 .top-nav .w3-right {
@@ -53,6 +45,7 @@ header {
 .left-nav {
   max-width: 300px;
   min-height: calc(100vh - 70.4px);
+  font-size: 16px;
 }
 
 .left-nav .w3-button {
@@ -135,11 +128,29 @@ header {
 }
 
 .form-input {
+  margin-left: 38px;
+  margin-right: 24px;
   width: 100%;
-  font-size: 13px;
+  font-size: 14px;
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .form-input .w3-center {
   display: block;
+}
+
+.form-input .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-input .actions {
+  margin-top: 12px;
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
