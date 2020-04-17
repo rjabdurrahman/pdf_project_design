@@ -153,4 +153,13 @@ header {
   margin-top: 12px;
   text-align: right;
 }
+
+.form-input .w3-btn {
+  min-width: 100px;
+  vertical-align: middle;
+}
+
+.form-input .w3-btn span {
+  font-size: 16px;
+}
 /*# sourceMappingURL=style.css.map */
