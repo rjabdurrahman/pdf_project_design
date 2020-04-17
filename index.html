@@ -7,7 +7,7 @@
     <title>Yves</title>
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -101,47 +101,260 @@
         </div>
         <div class="w3-container form-input">
             <h2>signalétique</h2>
-            <div class="r-row">
-                <div class="w3-blue r-col m2" style="margin-right: 5px;">Data 1</div>
-                <div class="w3-blue r-col m5" style="margin-right: 20px;">Data 1</div>
-                <div class="w3-red r-col m5">Data 2</div>
-            </div>
+            <table style="width: 100%;">
+                <tr>
+                    <td style="width: 200px;"></td>
+                    <td>
+                        <label class="w3-center">Contribuable</label>
+                    </td>
+                    <td>
+                        <label class="w3-center">Contribuable conjoint/partenaire</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Nom</label>
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Prénom</label>
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Date de naissance / numéro d'identification</label>
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Lieu de naissance (localité / pays)</label>
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label class="w3-center" style="margin-left: 220px;">Numéro de dossier</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="flex" style="justify-content: center;">
+                            <label class="w3-center">A indiquer obligatoirement (si attribué)&nbsp;:&nbsp;</label>
+                            <input class="w3-input w3-border" type="text" style="width: 300px;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Profession ou genre de l'activité</label>
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Téléphone (accessible le jour)</label>
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Courriel</label>
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label class="w3-center">Ancien domicile ou séjour habituel à indiquer uniquement en cas de
+                            changement entre le 1/1/2019 et le 31/12/2019</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Numéro - rue</label>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <input class="w3-input w3-border" type="text" style="width: 150px">
+                            <input class="w3-input w3-border" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <input class="w3-input w3-border" type="text" style="width: 150px">
+                            <input class="w3-input w3-border" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Code postal - localité</label>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <input class="w3-input w3-border" type="text" style="width: 200px">
+                            <input class="w3-input w3-border" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <input class="w3-input w3-border" type="text" style="width: 200px">
+                            <input class="w3-input w3-border" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Pays</label>
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Courriel</label>
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Du 1/1/2019 au</label>
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Numéro - rue</label>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <input class="w3-input w3-border" type="text" style="width: 150px">
+                            <input class="w3-input w3-border" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <input class="w3-input w3-border" type="text" style="width: 150px">
+                            <input class="w3-input w3-border" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Code postal - localité</label>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <input class="w3-input w3-border" type="text" style="width: 200px">
+                            <input class="w3-input w3-border" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex">
+                            <input class="w3-input w3-border" type="text" style="width: 200px">
+                            <input class="w3-input w3-border" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Pays</label>
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                    <td>
+                        <input class="w3-input w3-border" type="text">
+                    </td>
+                </tr>
+            </table>
         </div>
-    </div>
-    <script>
-        $('.w3-dropdown-click').click(function() {
-            $('.left-nav > .w3-button').removeClass('active')
-            let el = $(this).children('.w3-dropdown-content')
-            if (el.is(":visible")) {
-                el.hide();
-                $(this).removeClass('active')
-            } else {
-                $('.w3-dropdown-content').hide();
-                $('.w3-dropdown-click').removeClass('active');
-                $(this).addClass('active');
-                el.show();
-            }
-        })
-        $('.left-nav > .w3-button').click(function() {
-                let x = this;
-                $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
-                $('.w3-dropdown-content').hide();
-                if (x.className.indexOf("active") == -1) {
-                    x.className += " active";
+        <script>
+            $('.w3-dropdown-click').click(function() {
+                $('.left-nav > .w3-button').removeClass('active')
+                let el = $(this).children('.w3-dropdown-content')
+                if (el.is(":visible")) {
+                    el.hide();
+                    $(this).removeClass('active')
                 } else {
-                    x.className = x.className.replace(" active", "");
+                    $('.w3-dropdown-content').hide();
+                    $('.w3-dropdown-click').removeClass('active');
+                    $(this).addClass('active');
+                    el.show();
                 }
             })
-            // $('.left-nav > .w3-button, .w3-dropdown-click').click(function() {
-            //     let x = this;
-            //     $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
-            //     if (x.className.indexOf("active") == -1) {
-            //         x.className += " active";
-            //     } else {
-            //         x.className = x.className.replace(" active", "");
-            //     }
-            // })
-    </script>
+            $('.left-nav > .w3-button').click(function() {
+                    let x = this;
+                    $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
+                    $('.w3-dropdown-content').hide();
+                    if (x.className.indexOf("active") == -1) {
+                        x.className += " active";
+                    } else {
+                        x.className = x.className.replace(" active", "");
+                    }
+                })
+                // $('.left-nav > .w3-button, .w3-dropdown-click').click(function() {
+                //     let x = this;
+                //     $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
+                //     if (x.className.indexOf("active") == -1) {
+                //         x.className += " active";
+                //     } else {
+                //         x.className = x.className.replace(" active", "");
+                //     }
+                // })
+        </script>
 </body>
 
 </html>

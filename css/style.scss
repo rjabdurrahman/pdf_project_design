@@ -3,6 +3,23 @@ $primary-color: #4680ff;
 $b-color: #222c3c;
 $secondary-color: #6673FC;
 $body-color: #F7F7F7;
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightblue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $secondary-color;
+    border-radius: 3px;
+}
+
 body {
     background-color: $body-color;
     color: $b-color;
@@ -110,4 +127,9 @@ header {
 
 .form-input {
     width: 100%;
+    font-size: 13px;
+}
+
+.form-input .w3-center {
+    display: block;
 }
