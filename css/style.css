@@ -115,4 +115,8 @@ header {
   position: relative;
   padding-left: 22px;
 }
+
+.form-input {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
