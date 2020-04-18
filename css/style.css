@@ -10,6 +10,11 @@ body {
   display: flex;
 }
 
+.content-c {
+  background-color: #3b558b;
+  color: white;
+}
+
 header {
   position: relative;
 }
@@ -160,6 +165,95 @@ header {
 }
 
 .form-input .w3-btn span {
+  font-size: 16px;
+}
+
+input,
+select,
+option,
+textarea {
+  outline: none;
+}
+
+input.w3-input:focus,
+textarea.w3-input:focus,
+select:focus {
+  border: none;
+  border: 1px solid #014387 !important;
+}
+
+input[type="text"]:disabled {
+  background: #fdf5e6;
+  color: black;
+}
+
+input[type="text"]:disabled:hover {
+  border: 1px solid #ccc !important;
+}
+
+.table-container {
+  width: calc(100% - 40px);
+  margin: 12px auto;
+}
+
+.table-container .top {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.table-container .top label {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 12px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.table-container table thead tr {
+  padding: 16px;
+  background-color: #3b558b !important;
+  color: #ffffff;
+}
+
+.table-container table td,
+.table-container table th {
+  border: 1px solid lightgray;
+  padding: 4px 16px;
+}
+
+.table-container table .w3-btn {
+  padding: 4px 8px !important;
+}
+
+.table-container table .w3-btn span {
+  font-size: 16px;
+  display: inline-block;
+  padding-bottom: -8px;
+  margin-right: 6px;
+}
+
+.table-container table .w3-btn:hover {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  opacity: 0.8;
+}
+
+.w3-modal-content {
+  width: 550px;
+  padding-bottom: 8px;
+}
+
+.w3-btn.icon {
+  min-width: 100px;
+  vertical-align: middle;
+}
+
+.w3-btn.icon span {
   font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

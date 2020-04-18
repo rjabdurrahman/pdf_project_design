@@ -3,6 +3,7 @@ $primary-color: #4680ff;
 $b-color: #222c3c;
 $secondary-color: #6673FC;
 $body-color: #F7F7F7;
+$content-color: #3b558b;
 body {
     background-color: $body-color;
     color: $b-color;
@@ -12,6 +13,11 @@ body {
 
 .flex {
     display: flex;
+}
+
+.content-c {
+    background-color: $content-color;
+    color: white;
 }
 
 header {
@@ -142,5 +148,86 @@ header {
         span {
             font-size: 16px;
         }
+    }
+}
+
+input,
+select,
+option,
+textarea {
+    outline: none;
+}
+
+input.w3-input:focus,
+textarea.w3-input:focus,
+select:focus {
+    border: none;
+    border: 1px solid #014387 !important;
+}
+
+input[type="text"]:disabled {
+    background: #fdf5e6;
+    color: black;
+}
+
+input[type="text"]:disabled:hover {
+    border: 1px solid #ccc !important;
+}
+
+.table-container {
+    width: calc(100% - 40px);
+    margin: 12px auto;
+    .top {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        label {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 8px 12px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+    }
+    table {
+        thead {
+            tr {
+                padding: 16px;
+                background-color: $content-color !important;
+                color: $w-color;
+            }
+        }
+        td,
+        th {
+            border: 1px solid lightgray;
+            padding: 4px 16px;
+        }
+        .w3-btn {
+            padding: 4px 8px !important;
+            // Change Needed
+            span {
+                font-size: 16px;
+                display: inline-block;
+                padding-bottom: -8px;
+                margin-right: 6px;
+            }
+        }
+        .w3-btn:hover {
+            box-shadow: none !important;
+            opacity: 0.8;
+        }
+    }
+}
+
+.w3-modal-content {
+    width: 550px;
+    padding-bottom: 8px;
+}
+
+.w3-btn.icon {
+    min-width: 100px;
+    vertical-align: middle;
+    span {
+        font-size: 16px;
     }
 }

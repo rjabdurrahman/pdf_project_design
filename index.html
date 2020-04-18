@@ -21,11 +21,11 @@
                 <a href="#" class="w3-bar-item w3-padding-16">Brand Logo</a>
             </div>
             <div class="w3-right">
-                <a href="#" class="w3-bar-item w3-padding-16">
+                <a href="/" class="w3-bar-item w3-padding-16">
                     <label><span class="material-icons">home</span></label>
                     <label class="text">Home</label>
                 </a>
-                <a href="#" class="w3-bar-item w3-padding-16">
+                <a href="/client.html" class="w3-bar-item w3-padding-16">
                     <label><span class="material-icons">group</span></label>
                     <label class="text">Clients</label>
                 </a>
@@ -36,374 +36,140 @@
             </div>
         </div>
     </header>
-    <div class="flex">
-        <div class="left-nav w3-bar-block w3-white">
-            <div class="client flex">
-                <div class="letter">MM</div>
-                <div class="name">
-                    <h1>Mustasin</h1>
-                    <h4>Max</h4>
-                </div>
-            </div>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16 active">Identification</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Enfants</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Etat civil /
-                Non-résidents</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Options en
-                matière d’imposition collective et individuelle</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Bénéfice
-                commercial</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Bénéfice
-                agricole et forestier</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Bénéfice
-                profession libérale</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Occupation
-                salariée</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Pension /
-                Rente</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Capitaux
-                mobiliers</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Locations de
-                biens</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Revenus nets
-                divers</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Revenus
-                extraordinaires</a>
-
-            <div class="w3-dropdown-click">
-                <div class="flex">
-                    <a class="w3-button w3-padding-16">Dépenses spéciales
-                        couvertes
-                        forfait</a>
-                    <span class="arrow"></span>
-                </div>
-                <div class="w3-dropdown-content">
-                    <a href="#" class="w3-bar-item w3-button">Arrérages de rentes et charges permanentes</a>
-                    <a href="#" class="w3-bar-item w3-button">Intérêts débiteurs</a>
-                    <a href="#" class="w3-bar-item w3-button">Primes d’assurance et cotisations</a>
-                    <a href="#" class="w3-bar-item w3-button">Cotisations payées à titre personnel</a>
-                    <a href="#" class="w3-bar-item w3-button">Prévoyance-vieillesse</a>
-                    <a href="#" class="w3-bar-item w3-button">Epargne logement</a>
-                </div>
-            </div>
-            <div class="w3-dropdown-click">
-                <div class="flex">
-                    <a class="w3-button w3-padding-16">Dépenses spéciales en
-                        dehors
-                        forfait</a>
-                    <span class="arrow rotate"></span>
-                </div>
-                <div class="w3-dropdown-content">
-                    <a href="#" class="w3-bar-item w3-button">Cotisations obligatoires</a>
-                    <a href="#" class="w3-bar-item w3-button">Régime complémentaire</a>
-                    <a href="#" class="w3-bar-item w3-button">Libéralités</a>
-                    <a href="#" class="w3-bar-item w3-button">Pertes d’exploitation reportables</a>
-                </div>
-            </div>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Charges
-                extraordinaires</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Retenues
-                d’impôt /<br> Diverses demandes</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Revenu
-                imposable</a>
+    <div class="table-container">
+        <div class="top">
+            <label class="w3-teal">Clients</label>
+            <button class="w3-btn w3-teal w3-round" onclick="document.getElementById('clientModal').style.display='block'">Add Client</button>
         </div>
-        <div class="form-input">
-            <div class="top">
-                <h2>signalétique</h2>
-                <div class="actions">
-                    <button class="w3-btn w3-blue w3-round">Reset</button>
-                    <button class="w3-btn w3-teal w3-round"><span
-                            class="material-icons">save_alt</span>&nbsp;&nbsp;Save</button>
-                </div>
+        <div class="table-content">
+            <div class="w3-responsive">
+                <table class="w3-table-all">
+                    <thead>
+                        <tr>
+                            <th style="width: 100px;">ID</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Email</th>
+                            <th class="w3-center" style="width: 180px">Action</th>
+                            <th class="w3-center" style="width: 150px">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1000000</td>
+                            <td>Mustasin</td>
+                            <td>Max</td>
+                            <td>max@gmail.com</td>
+                            <td class="w3-center">
+                                <button class="w3-btn w3-round w3-blue"><span
+                                        class="material-icons">picture_as_pdf</span>Generate PDF</button>
+                            </td>
+                            <td class="w3-center">
+                                <button class="w3-btn w3-round w3-red"><span
+                                        class="material-icons">delete_sweep</span>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4030300</td>
+                            <td>Patsim</td>
+                            <td>Lunra</td>
+                            <td>lunra@gmail.com</td>
+                            <td class="w3-center">
+                                <button class="w3-btn w3-round w3-blue"><span
+                                        class="material-icons">picture_as_pdf</span>Generate PDF</button>
+                            </td>
+                            <td class="w3-center">
+                                <button class="w3-btn w3-round w3-red"><span
+                                        class="material-icons">delete_sweep</span>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1000000</td>
+                            <td>Dematri</td>
+                            <td>Max</td>
+                            <td>max@yahoo.com</td>
+                            <td class="w3-center">
+                                <button class="w3-btn w3-round w3-blue"><span
+                                        class="material-icons">picture_as_pdf</span>Generate PDF</button>
+                            </td>
+                            <td class="w3-center">
+                                <button class="w3-btn w3-round w3-red"><span
+                                        class="material-icons">delete_sweep</span>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>435355435</td>
+                            <td>Yesin</td>
+                            <td>Max</td>
+                            <td>pat@hotmail.com</td>
+                            <td class="w3-center">
+                                <button class="w3-btn w3-round w3-blue"><span
+                                        class="material-icons">picture_as_pdf</span>Generate PDF</button>
+                            </td>
+                            <td class="w3-center">
+                                <button class="w3-btn w3-round w3-red"><span
+                                        class="material-icons">delete_sweep</span>Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- <div ng-show="!load" class="w3-pale-blue" style="padding: 12px; text-align: center;"><img src="img/loader.gif" alt="Loading..." style="height: 25px; width: 25px;"></div>
+                <div id="nodata" ng-show="nodata" class="w3-pale-blue" style="padding: 12px; text-align: center;">No Data Found!</div> -->
             </div>
-            <table style="width: 100%;">
-                <tr>
-                    <td style="width: 200px;"></td>
-                    <td>
-                        <label class="w3-center">Contribuable</label>
-                    </td>
-                    <td>
-                        <label class="w3-center">Contribuable conjoint/partenaire</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Nom</label>
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Prénom</label>
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Date de naissance /<br> numéro d'identification</label>
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Lieu de naissance <br>(localité / pays)</label>
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <label class="w3-center" style="margin-left: 220px;">Numéro de dossier</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <div class="flex" style="justify-content: center;">
-                            <label class="w3-center">A indiquer obligatoirement (si attribué)&nbsp;:&nbsp;</label>
-                            <input class="w3-input w3-border" type="text" style="width: 300px;">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Profession ou genre de l'activité</label>
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Téléphone (accessible le jour)</label>
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Courriel</label>
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <label class="w3-center">Ancien domicile ou séjour habituel à indiquer uniquement en cas de
-                            changement entre le 1/1/2019 et le 31/12/2019</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Numéro - rue</label>
-                    </td>
-                    <td>
-                        <div class="flex">
-                            <input class="w3-input w3-border" type="text" style="width: 150px">
-                            <input class="w3-input w3-border" type="text">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="flex">
-                            <input class="w3-input w3-border" type="text" style="width: 150px">
-                            <input class="w3-input w3-border" type="text">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Code postal - localité</label>
-                    </td>
-                    <td>
-                        <div class="flex">
-                            <input class="w3-input w3-border" type="text" style="width: 200px">
-                            <input class="w3-input w3-border" type="text">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="flex">
-                            <input class="w3-input w3-border" type="text" style="width: 200px">
-                            <input class="w3-input w3-border" type="text">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Pays</label>
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Courriel</label>
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Du 1/1/2019 au</label>
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Numéro - rue</label>
-                    </td>
-                    <td>
-                        <div class="flex">
-                            <input class="w3-input w3-border" type="text" style="width: 150px">
-                            <input class="w3-input w3-border" type="text">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="flex">
-                            <input class="w3-input w3-border" type="text" style="width: 150px">
-                            <input class="w3-input w3-border" type="text">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Code postal - localité</label>
-                    </td>
-                    <td>
-                        <div class="flex">
-                            <input class="w3-input w3-border" type="text" style="width: 200px">
-                            <input class="w3-input w3-border" type="text">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="flex">
-                            <input class="w3-input w3-border" type="text" style="width: 200px">
-                            <input class="w3-input w3-border" type="text">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Pays</label>
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                    <td>
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <h2>Coordonnées bancaires</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Titulaire du compte</label>
-                    </td>
-                    <td colspan="2">
-                        <input class="w3-input w3-border" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Code IBAN</label>
-                    </td>
-                    <td colspan="2">
-                        <div class="flex">
-                            <input class="w3-input w3-border" type="text">
-                            <label style="width: 180px;margin: 10px 12px;">SWIFT BIC</label>
-                            <input class="w3-input w3-border" type="text">
-                        </div>
-                    </td>
-                    <tr>
-                        <td colspan="2"></td>
-                        <td style="text-align: right; padding-top: 12px;">
-                            <button class="w3-btn w3-blue w3-round">Reset</button>
-                            <button class="w3-btn w3-teal w3-round"><span
-                                class="material-icons">save_alt</span>&nbsp;&nbsp;Save</button>
-                        </td>
-                    </tr>
-                </tr>
-            </table>
         </div>
     </div>
+    <!-- Client Add Modal -->
+    <div id="clientModal" class="w3-modal">
+        <form name="client" class="w3-modal-content w3-animate-right w3-card-4">
+            <header class="w3-container content-c">
+                <span onclick="document.getElementById('clientModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h2>Add Client</h2>
+            </header>
+            <div class="w3-container">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 120px;"></td>
+                        <td>
+                            <div class="w3-center">Contribuable</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Nom</label>
+                        </td>
+                        <td>
+                            <input class="w3-input w3-border" type="text" name="nom" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Prénom</label>
+                        </td>
+                        <td>
+                            <input class="w3-input w3-border" type="text" name="prenom" required>
+                        </td>
 
+                    </tr>
+                </table>
+            </div>
+            <footer class="w3-panel" style="text-align: right;">
+                <button class="w3-btn icon w3-blue w3-round" onclick="document.getElementById('clientModal').style.display='none'">Close</button>
+                <button type="submit" class="w3-btn icon w3-teal w3-round"><span
+                        class="material-icons">save_alt</span>&nbsp;&nbsp;Save</button>
+            </footer>
+        </form>
+    </div>
+    <!-- Client Add Modal Ednd -->
     <script>
-        $('.w3-dropdown-click').click(function() {
-            $('.left-nav > .w3-button').removeClass('active')
-            let el = $(this).children('.w3-dropdown-content')
-            if (el.is(":visible")) {
-                el.hide();
-                $(this).removeClass('active')
-            } else {
-                $('.w3-dropdown-content').hide();
-                $('.w3-dropdown-click').removeClass('active');
-                $(this).addClass('active');
-                el.show();
+        $('form').submit(function(e) {
+            e.preventDefault();
+            let clientForm = document.forms['client'];
+            let client = {
+                nom: clientForm['nom'].value,
+                prenom: clientForm['prenom'].value
             }
+            console.log(client)
         })
-        $('.left-nav > .w3-button').click(function() {
-                let x = this;
-                $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
-                $('.w3-dropdown-content').hide();
-                if (x.className.indexOf("active") == -1) {
-                    x.className += " active";
-                } else {
-                    x.className = x.className.replace(" active", "");
-                }
-            })
-            // $('.left-nav > .w3-button, .w3-dropdown-click').click(function() {
-            //     let x = this;
-            //     $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
-            //     if (x.className.indexOf("active") == -1) {
-            //         x.className += " active";
-            //     } else {
-            //         x.className = x.className.replace(" active", "");
-            //     }
-            // })
     </script>
 </body>
 
