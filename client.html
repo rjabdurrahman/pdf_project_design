@@ -107,7 +107,7 @@
             <a href="#" class="w3-bar-item w3-button w3-padding-16">Revenu
                 imposable</a>
         </div>
-        <div class="form-input">
+        <form name="identification" class="form-input">
             <div class="top">
                 <h2>signalétique</h2>
                 <div class="actions">
@@ -362,13 +362,13 @@
                         <td colspan="2"></td>
                         <td style="text-align: right; padding-top: 12px;">
                             <button class="w3-btn w3-blue w3-round">Reset</button>
-                            <button class="w3-btn w3-teal w3-round"><span
+                            <button type="submit" class="w3-btn w3-teal w3-round"><span
                                 class="material-icons">save_alt</span>&nbsp;&nbsp;Save</button>
                         </td>
                     </tr>
                 </tr>
             </table>
-        </div>
+        </form>
     </div>
 
     <script>
@@ -386,24 +386,28 @@
             }
         })
         $('.left-nav > .w3-button').click(function() {
-                let x = this;
-                $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
-                $('.w3-dropdown-content').hide();
-                if (x.className.indexOf("active") == -1) {
-                    x.className += " active";
-                } else {
-                    x.className = x.className.replace(" active", "");
-                }
+            let x = this;
+            $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
+            $('.w3-dropdown-content').hide();
+            if (x.className.indexOf("active") == -1) {
+                x.className += " active";
+            } else {
+                x.className = x.className.replace(" active", "");
+            }
+        })
+
+        // Form Input
+        $('form').submit(function(e) {
+                e.preventDefault();
+                let identForm = document.forms['identification'];
+                console.log(identForm)
+                    // let client = {
+                    //     nom: clientForm['nom'].value,
+                    //     prenom: clientForm['prenom'].value
+                    // }
+                    // console.log(client)
             })
-            // $('.left-nav > .w3-button, .w3-dropdown-click').click(function() {
-            //     let x = this;
-            //     $('.left-nav > .w3-button, .w3-dropdown-click').removeClass('active');
-            //     if (x.className.indexOf("active") == -1) {
-            //         x.className += " active";
-            //     } else {
-            //         x.className = x.className.replace(" active", "");
-            //     }
-            // })
+            // Form Input End
     </script>
 </body>
 
